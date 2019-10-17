@@ -34,8 +34,7 @@ from tqdm import tqdm, trange
 from utils_ner import convert_examples_to_features, get_labels, read_examples_from_file
 
 from transformers import AdamW, WarmupLinearSchedule
-from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer,
-                         RobertaConfig, RobertaForTokenClassification, RobertaTokenizer
+from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer, RobertaConfig, RobertaForTokenClassification, RobertaTokenizer
 
 logger = logging.getLogger(__name__)
 
