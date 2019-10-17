@@ -424,7 +424,7 @@ def main():
                                           num_labels=num_labels)
     tokenizer = tokenizer_class.from_pretrained(args.tokenizer_name if args.tokenizer_name else args.model_name_or_path,
                                                 do_lower_case=args.do_lower_case)
-    model = model_class.from_pretrained(args.model_name_or_path#, from_tf=bool(".ckpt" in args.model_name_or_path), this doesn't work on aws as its not compatible with TF 2.0
+    model = model_class.from_pretrained(args.model_name_or_path)#, from_tf=bool(".ckpt" in args.model_name_or_path), this doesn't work on aws as its not compatible with TF 2.0
                                         #config=config)
 
     if args.local_rank == 0:
