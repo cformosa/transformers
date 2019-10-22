@@ -481,6 +481,11 @@ class RobertaForTokenClassification(BertPreTrainedModel):
         loss, scores = outputs[:2]
 
     """
+    config_class = RobertaConfig
+    pretrained_model_archive_map = ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP
+    base_model_prefix = "roberta"
+
+    
     def __init__(self, config):
         super(RobertaForTokenClassification, self).__init__(config)
         self.num_labels = config.num_labels
